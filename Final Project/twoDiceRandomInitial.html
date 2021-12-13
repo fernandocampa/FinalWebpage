@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- dice.html                            Fernando Campa -->
+<!-- This page simulates and displays the roll of a die. -->
+<!-- =================================================== -->
+
+<html>
+ <head>
+   <title> Die Rolls </title>
+  <body style = "background-color:purple">
+   <script type="text/javascript">
+     function SelectImage()
+     // Assumes: die images are in balance3e.com/Images
+     // Results: displays a randomly selected image of a 6-sided die
+     {
+       roll1=Math.floor(Math.random()*6) + 1;
+       roll2=Math.floor(Math.random()*6) + 1;
+
+       imgName1='ImagesForHTMLandJS/die' + roll1 + '.gif';
+       imgName2='ImagesForHTMLandJS/die' + roll2 + '.gif';
+
+       document.getElementById('dieImg1').src = imgName1;
+       document.getElementById('dieImg2').src = imgName2;
+     }
+   </script>
+ </head>
+
+ <body>
+   <div style="text-align:center"> 
+     <p>
+       <img id="dieImg1" alt="die image"
+            src="ImagesForHTMLandJS/die1.gif">
+
+       <img id="dieImg2" alt="die image"
+	    src="ImagesForHTMLandJS/die2.gif">
+     </p>
+     <input type="button" value="Click to Roll" onclick="SelectImage();">
+   <body onload="SelectImage();">
+   </div>
+ </body>
+</html>

@@ -1,0 +1,126 @@
+<!--!DOCTYPE html -->
+<!-- pirate.html                          Fernando Campa -->
+<!-- Simple page that translates words/phrases from      -->
+<!-- to just delete button just put '' and close it      -->
+<!-- To add a picture just open with chrome and copy the link into the place -->
+<!-- =================================================== -->
+
+<html>
+ <head>
+   <title> Pirate Translator </title>
+ </head>
+
+ <body>
+
+   <div style="text-align:center">
+   <img src="file:///Users/fernandocampa/Desktop/Computer%20Science/Final%20Project/pirate%231.gif" alt="No Image" height=200 width=200
+	
+        onmouseover=src="file:///Users/fernandocampa/Desktop/Computer%20Science/Final%20Project/pirtae%232.gif" alt="No Image" height=200 width=200
+		onmouseout=src="file:///Users/fernandocampa/Desktop/Computer%20Science/Final%20Project/pirate%231.gif";>
+   </div>
+
+   <h3> Pirate Translator</h3>
+   <p>Simply click on the buttons to translate
+      words and/or phrases from English to pirate talk.
+   </p>
+
+   <p>
+
+
+		Greeting:
+
+     <input type="button" value="hello" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'ahoy ';">
+
+     <input type="button" value="sir" 
+            onclick="document.getElementById('outputDiv').innerHTML = 
+                       document.getElementById('outputDiv').innerHTML + 'matey ';">
+
+     <input type="button" value="excuse me"
+	    onclick="document.getElementById('outputDiv').innerHTML=
+			document.getElementById('outputDiv').innerHTML + 'arrr';">
+	
+ <br>
+
+  		 People:
+
+     <input type="button" value="officer" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'foul braggart ';">
+
+     <input type="button" value="stranger" 
+            onclick="document.getElementById('outputDiv').innerHTML = 
+                       document.getElementById('outputDiv').innerHTML + 'scurvy dog';">
+
+     <input type="button" value="madam"
+	    onclick="document.getElementById('outputDiv').innerHTML=
+			document.getElementById('outputDiv').innerHTML + 'proud beauty';">
+
+<br>
+
+		 Question:
+
+
+    <input type="button" value="where is" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'whar be ';">
+
+     <input type="button" value="can you help me find" 
+            onclick="document.getElementById('outputDiv').innerHTML = 
+                       document.getElementById('outputDiv').innerHTML + 'know ye';">
+
+     <input type="button" value="is that"
+	    onclick="document.getElementById('outputDiv').innerHTML=
+			document.getElementById('outputDiv').innerHTML + 'be that';">
+
+<br>
+
+		Articles:
+
+    <input type="button" value="the" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'th' ';">
+
+     <input type="button" value="nearby" 
+            onclick="document.getElementById('outputDiv').innerHTML = 
+                       document.getElementById('outputDiv').innerHTML + 'broadside';">
+
+     <input type="button" value="my"
+	    onclick="document.getElementById('outputDiv').innerHTML=
+			document.getElementById('outputDiv').innerHTML + 'me';">
+
+<br>
+
+		Places:
+
+    <input type="button" value="restroom" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'head ';">
+
+     <input type="button" value="hotel" 
+            onclick="document.getElementById('outputDiv').innerHTML = 
+                       document.getElementById('outputDiv').innerHTML + 'fleabag';">
+
+     <input type="button" value="bank"
+	    onclick="document.getElementById('outputDiv').innerHTML=
+			document.getElementById('outputDiv').innerHTML + 'buried trasure';">
+
+	
+<br>
+
+		
+    
+      <input type="button" value="Clear the Translation"
+	    onclick="document.getElementById('outputDiv').innerHTML='';">
+
+
+
+      <input type="button" value="New Line"
+		onclick="document.getElementById('outputDiv').innerHTML= document.getElementById('outputDiv').innerHTML + '<br>';">
+		      
+   </p>
+   <hr>
+   <div id="outputDiv"></div>
+ </body>
+</html>
